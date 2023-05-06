@@ -1,3 +1,13 @@
+// ==UserScript==
+// @name         Save My Exams Answers for All
+// @namespace    http://tampermonkey.net/
+// @version      1.2.2
+// @description  Unlocks answers to all SME topic questions.
+// @author       Destaq
+// @match        https://www.savemyexams.co.uk/**/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=savemyexams.co.uk
+// @grant        none
+// ==/UserScript==
 
 // Gather all the scripts that are used to hold answer images.
 function findRelevantScript(dataHash) {
@@ -129,3 +139,4 @@ function setup() {
         });
     });
 }
+setup()
